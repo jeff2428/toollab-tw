@@ -36,7 +36,22 @@ function extractJsonObject(rawText) {
   const trimmed = String(rawText || '').trim();
   const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/i);
   const candidate = fenced ? fenced[1].trim() : trimmed;
-  return JSON.parse(candidate);
+  try {
+    return JSON.parse(candidate);
+  } catch {
+    const firstBrace = candidate.indexOf('{');
+    const firstBracket = candidate.indexOf('[');
+    const start =
+      firstBrace === -1 ? firstBracket : firstBracket === -1 ? firstBrace : Math.min(firstBrace, firstBracket);
+    if (start !== -1) {
+      const endChar = candidate[start] === '[' ? ']' : '}';
+      const end = candidate.lastIndexOf(endChar);
+      if (end > start) {
+        return JSON.parse(candidate.slice(start, end + 1));
+      }
+    }
+    throw new Error(`Failed to parse Gemini JSON output: ${candidate.slice(0, 200)}`);
+  }
 }
 
 async function withRetry(fn, { retries = 3, baseDelayMs = 2000 } = {}) {
@@ -91,16 +106,35 @@ ${toolSummary}
 
 請精簡條列輸出事實摘要（繁體中文），包含最新官方方案名稱、是否有免費版、付費方案費用與台幣約略換算、核心亮點與實際限制。`;
 
-  const interaction = await withRetry(() =>
-    ai.interactions.create({
-      model: GEMINI_MODEL_MAIN,
-      input: prompt,
-      tools: [{ type: 'google_search' }, { type: 'url_context' }],
-      store: false,
-    })
-  );
-
-  return extractTextFromInteraction(interaction);
+  try {
+    const interaction = await withRetry(() =>
+      ai.interactions.create({
+        model: GEMINI_MODEL_MAIN,
+        input: prompt,
+        tools: [{ type: 'google_search' }, { type: 'url_context' }],
+        store: false,
+      })
+    );
+    return extractTextFromInteraction(interaction);
+  } catch (err) {
+    console.warn(`[gemini] Pass 1 (google_search + url_context) failed, retrying with google_search only: ${err.message}`);
+    try {
+      const interaction = await withRetry(() =>
+        ai.interactions.create({
+          model: GEMINI_MODEL_MAIN,
+          input: prompt,
+          tools: [{ type: 'google_search' }],
+          store: false,
+        })
+      );
+      return extractTextFromInteraction(interaction);
+    } catch (err2) {
+      console.warn(`[gemini] Pass 1 fallback to catalog summary: ${err2.message}`);
+      return toolsCatalog
+        .map((t) => `- ${t.name}: $${t.startingPriceUsd}/mo (${t.hasFreePlan ? 'Free plan available' : 'Paid'}), ${t.tagline}. Pros: ${(t.pros || []).join('; ')}`)
+        .join('\n');
+    }
+  }
 }
 
 /**
@@ -171,7 +205,11 @@ Strict rules:
       model: GEMINI_MODEL_MAIN,
       system_instruction: systemInstruction,
       input: userPrompt,
-      response_format: schema,
+      response_format: {
+        type: 'text',
+        mime_type: 'application/json',
+        schema,
+      },
       store: false,
     })
   );
@@ -220,7 +258,11 @@ Do NOT repeat these existing slugs: ${existingSlugs.join(', ')}`
     ai.interactions.create({
       model: GEMINI_MODEL_FAST,
       input: prompt,
-      response_format: schema,
+      response_format: {
+        type: 'text',
+        mime_type: 'application/json',
+        schema,
+      },
       store: false,
     })
   );

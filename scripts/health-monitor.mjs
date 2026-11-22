@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import path from 'node:path';
 import {
   GLOBAL_PATHS,
   daysBetween,
@@ -121,7 +122,14 @@ export async function runHealthMonitor({ siteIds, dryRun = false, weeklyDigest =
   const today = todayIsoDate();
 
   const perSite = targets.map((id) => checkSiteHealth(id, today));
-  const allIssues = perSite.flatMap((s) => s.report.issues);
+  const aiErrors = readJson(path.join(GLOBAL_PATHS.reportsDir, 'ai-errors.json'), []);
+  const aiIssues = (Array.isArray(aiErrors) ? aiErrors : []).map((e) => ({
+    siteId: e.siteId,
+    severity: 'action_required',
+    title: `[${e.siteId}] Gemini AI 自動產文失敗`,
+    detail: e.error,
+  }));
+  const allIssues = [...perSite.flatMap((s) => s.report.issues), ...aiIssues];
   const hasActionable = allIssues.some((i) => i.severity === 'critical' || i.severity === 'action_required');
 
   const summary = {

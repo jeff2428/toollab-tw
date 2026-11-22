@@ -1,10 +1,12 @@
 import {
+  GLOBAL_PATHS,
   getSiteContext,
   nowIsoTaipei,
   parseCliFlags,
   readJson,
   resolveTargetSites,
   writeJson,
+  writeText,
 } from './lib/utils.mjs';
 import { runDiscover } from './discover-topics.mjs';
 import { runGenerate } from './generate-content.mjs';
@@ -66,5 +68,13 @@ async function main() {
 
 main().catch((err) => {
   console.error('=== Matrix Pipeline FAILED ===', err);
+  try {
+    writeText(
+      GLOBAL_PATHS.alertIssue,
+      `## Affiliate Matrix 管線執行失敗\n\n\`\`\`\n${err?.stack || err?.message || String(err)}\n\`\`\`\n`
+    );
+  } catch {
+    // ignore alert file write error
+  }
   process.exit(1);
 });

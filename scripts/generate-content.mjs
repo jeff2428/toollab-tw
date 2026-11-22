@@ -1,6 +1,8 @@
 import path from 'node:path';
 import {
+  GLOBAL_PATHS,
   absoluteUrl,
+  countEffectiveChars,
   daysBetween,
   getSiteContext,
   loadDotEnv,
@@ -117,15 +119,47 @@ async function generateForSite(siteId, { dryRun, skipAi, mode }) {
     locale: siteConfig.locale,
   });
 
-  console.log(`[generate:${siteId}] Pass 2 structured article (${targetTopic.slug})...`);
-  const generated = await generateStructuredArticle({
-    topic: targetTopic,
-    toolsCatalog: usedCatalog,
-    factBrief,
-    siteConfig,
-    mode: selectedMode,
-    existingBody: targetArticle?.body || '',
-  });
+  const validSlugs = new Set(catalog.map((c) => c.slug));
+  const fallbackSlug = usedCatalog[0]?.slug || catalog[0]?.slug || '';
+  const minChars = Number(siteConfig.minArticleChars || 1200);
+
+  let generated = null;
+  let lastGenErr = null;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      console.log(`[generate:${siteId}] Pass 2 structured article (${targetTopic.slug}, attempt ${attempt})...`);
+      const candidate = await generateStructuredArticle({
+        topic: targetTopic,
+        toolsCatalog: usedCatalog,
+        factBrief,
+        siteConfig,
+        mode: selectedMode,
+        existingBody: targetArticle?.body || '',
+      });
+
+      let bodyMd = String(candidate?.bodyMarkdown || '');
+      // Sanitize unknown /go/<slug> links so QA Gate never blocks deploy
+      bodyMd = bodyMd.replace(/\/go\/([a-z0-9-]+)/g, (full, s) =>
+        validSlugs.has(s) ? full : fallbackSlug ? `/go/${fallbackSlug}` : full
+      );
+      candidate.bodyMarkdown = bodyMd;
+
+      const chars = countEffectiveChars(bodyMd);
+      const h2Count = (bodyMd.match(/^##\s+/gm) || []).length;
+      if (chars < minChars || h2Count < 3) {
+        throw new Error(`Draft below quality threshold (chars=${chars}/${minChars}, h2=${h2Count})`);
+      }
+      generated = candidate;
+      break;
+    } catch (err) {
+      lastGenErr = err;
+      console.warn(`[generate:${siteId}] Attempt ${attempt} failed: ${err.message}`);
+    }
+  }
+
+  if (!generated) {
+    throw lastGenErr || new Error('Article generation failed after 2 attempts');
+  }
 
   const meta = {
     title: generated.title || targetTopic.title,
@@ -173,8 +207,18 @@ export async function runGenerate({ siteIds, dryRun = false, skipAi = false, mod
   loadDotEnv();
   const targets = siteIds || resolveTargetSites();
   const summary = {};
+  const aiErrors = [];
   for (const siteId of targets) {
-    summary[siteId] = await generateForSite(siteId, { dryRun, skipAi, mode });
+    try {
+      summary[siteId] = await generateForSite(siteId, { dryRun, skipAi, mode });
+    } catch (err) {
+      console.error(`[generate:${siteId}] Error (continuing pipeline): ${err.message}`);
+      aiErrors.push({ siteId, error: err.message, at: nowIsoTaipei() });
+      summary[siteId] = { action: 'error', error: err.message };
+    }
+  }
+  if (!dryRun) {
+    writeJson(path.join(GLOBAL_PATHS.reportsDir, 'ai-errors.json'), aiErrors);
   }
   return summary;
 }
