@@ -9,7 +9,7 @@
     "createdAt": "2026-11-22T09:00:00+08:00",
     "publishedAt": null,
     "externalId": null,
-    "note": "Seed social post"
+    "note": "skipped (unconfigured)"
   },
   {
     "id": "soc-seed-002",
@@ -21,7 +21,7 @@
     "createdAt": "2026-11-22T09:00:00+08:00",
     "publishedAt": null,
     "externalId": null,
-    "note": "Seed social post"
+    "note": "skipped (unconfigured)"
   },
   {
     "id": "soc-seed-003",
@@ -33,6 +33,6 @@
     "createdAt": "2026-11-22T09:00:00+08:00",
     "publishedAt": null,
     "externalId": null,
-    "note": "Seed social post"
+    "note": "skipped (unconfigured)"
   }
 ]

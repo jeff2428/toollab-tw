@@ -1,9 +1,9 @@
 {
-  "lastPipelineRun": null,
+  "lastPipelineRun": "2026-11-22T14:48:54.832+08:00",
   "lastContentGeneratedAt": "2026-11-22T11:00:00+08:00",
-  "lastExchangeRateUpdate": "2026-11-22T11:00:00+08:00",
+  "lastExchangeRateUpdate": "2026-11-22T14:48:42.487+08:00",
   "lastThreadsTokenRefresh": null,
-  "lastHealthCheckAt": null,
+  "lastHealthCheckAt": "2026-11-22T14:48:54.825+08:00",
   "consecutiveFailures": 0,
   "dailyCounters": {
     "date": "2026-11-22",
@@ -11,7 +11,7 @@
     "socialPublished": 0
   },
   "lastHealthSummary": {
-    "status": "ok",
+    "status": "healthy",
     "articleCount": 2,
     "activeAffiliateLinks": 0,
     "placeholderAffiliateLinks": 10

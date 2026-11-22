@@ -1,38 +1,221 @@
 {
-  "checkedAt": "2026-11-22T14:30:46.911+08:00",
+  "checkedAt": "2026-11-22T14:48:51.025+08:00",
   "passed": true,
   "totalArticles": 8,
   "totalTools": 30,
   "sites": [
     {
       "siteId": "toollab-tw",
-      "checkedAt": "2026-11-22T14:30:46.903+08:00",
+      "checkedAt": "2026-11-22T14:48:45.459+08:00",
       "passed": true,
       "articleCount": 4,
       "catalogCount": 12,
       "errors": [],
       "warnings": [],
-      "urlResults": []
+      "urlResults": [
+        {
+          "slug": "notion",
+          "url": "https://www.notion.so/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "make",
+          "url": "https://www.make.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "elevenlabs",
+          "url": "https://elevenlabs.io/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "nordvpn",
+          "url": "https://nordvpn.com/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "surfshark",
+          "url": "https://surfshark.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "hostinger",
+          "url": "https://www.hostinger.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "canva",
+          "url": "https://www.canva.com/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "cursor",
+          "url": "https://www.cursor.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "writesonic",
+          "url": "https://writesonic.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "heygen",
+          "url": "https://www.heygen.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "cloudways",
+          "url": "https://www.cloudways.com/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "perplexity",
+          "url": "https://www.perplexity.ai/",
+          "ok": true,
+          "status": 200
+        }
+      ]
     },
     {
       "siteId": "saasradar-en",
-      "checkedAt": "2026-11-22T14:30:46.908+08:00",
+      "checkedAt": "2026-11-22T14:48:46.707+08:00",
       "passed": true,
       "articleCount": 2,
       "catalogCount": 10,
       "errors": [],
       "warnings": [],
-      "urlResults": []
+      "urlResults": [
+        {
+          "slug": "make",
+          "url": "https://www.make.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "notion",
+          "url": "https://www.notion.so/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "elevenlabs",
+          "url": "https://elevenlabs.io/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "heygen",
+          "url": "https://www.heygen.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "writesonic",
+          "url": "https://writesonic.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "hostinger",
+          "url": "https://www.hostinger.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "cloudways",
+          "url": "https://www.cloudways.com/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "nordvpn",
+          "url": "https://nordvpn.com/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "surfshark",
+          "url": "https://surfshark.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "canva",
+          "url": "https://www.canva.com/",
+          "ok": true,
+          "status": 403
+        }
+      ]
     },
     {
       "siteId": "tripdeals-tw",
-      "checkedAt": "2026-11-22T14:30:46.911+08:00",
+      "checkedAt": "2026-11-22T14:48:51.025+08:00",
       "passed": true,
       "articleCount": 2,
       "catalogCount": 8,
       "errors": [],
       "warnings": [],
-      "urlResults": []
+      "urlResults": [
+        {
+          "slug": "klook",
+          "url": "https://www.klook.com/zh-TW/",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "kkday",
+          "url": "https://www.kkday.com/zh-tw",
+          "ok": true,
+          "status": 403
+        },
+        {
+          "slug": "agoda",
+          "url": "https://www.agoda.com/zh-tw/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "booking",
+          "url": "https://www.booking.com/index.zh-tw.html",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "airalo",
+          "url": "https://www.airalo.com/zh-TW",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "djb-esim",
+          "url": "https://esim.djbcard.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "tripcom",
+          "url": "https://tw.trip.com/",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "slug": "nordvpn",
+          "url": "https://nordvpn.com/",
+          "ok": true,
+          "status": 403
+        }
+      ]
     }
   ]
 }

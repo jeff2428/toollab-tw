@@ -8,7 +8,7 @@
   "description": "Data-driven software reviews, head-to-head pricing comparisons, and lean AI automation stacks for founders, creators, and remote teams worldwide.",
   "locale": "en-US",
   "currency": "USD",
-  "usdToTwd": 32.5,
+  "usdToTwd": 32.98,
   "defaultSiteUrl": "https://jeff2428.github.io",
   "defaultBasePath": "/sites/saasradar-en",
   "editorialTeam": "SaaSRadar Editorial",
@@ -30,7 +30,12 @@
     "cloudflareToken": ""
   },
   "social": {
-    "hashtags": ["#AI", "#SaaS", "#Automation", "#Productivity"],
+    "hashtags": [
+      "#AI",
+      "#SaaS",
+      "#Automation",
+      "#Productivity"
+    ],
     "threadsEnabled": true,
     "facebookEnabled": true,
     "xEnabled": true,

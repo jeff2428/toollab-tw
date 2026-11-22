@@ -9,7 +9,7 @@
     "createdAt": "2026-11-22T11:00:00+08:00",
     "publishedAt": null,
     "externalId": null,
-    "note": "Seed social post"
+    "note": "skipped (unconfigured)"
   },
   {
     "id": "trip-soc-002",
@@ -21,6 +21,6 @@
     "createdAt": "2026-11-22T11:00:00+08:00",
     "publishedAt": null,
     "externalId": null,
-    "note": "Seed social post"
+    "note": "skipped (unconfigured)"
   }
 ]
