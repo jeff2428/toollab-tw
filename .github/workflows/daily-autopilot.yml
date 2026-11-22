@@ -14,11 +14,12 @@ permissions:
 
 concurrency:
   group: autopilot-daily
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   autopilot:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -80,6 +81,7 @@ jobs:
           git add sites/ reports/ config/
           if ! git diff --cached --quiet; then
             git commit -m "chore(autopilot): daily matrix content, SEO & social update [skip ci]"
+            git pull --rebase || true
             git push
           else
             echo "No repository changes to commit."

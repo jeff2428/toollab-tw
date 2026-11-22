@@ -54,11 +54,22 @@ function extractJsonObject(rawText) {
   }
 }
 
-async function withRetry(fn, { retries = 3, baseDelayMs = 2000 } = {}) {
+function withTimeout(promise, ms, label) {
+  let timer;
+  const timeoutPromise = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+  });
+  return Promise.race([promise, timeoutPromise]).finally(() => clearTimeout(timer));
+}
+
+async function withRetry(fn, { retries = 1, baseDelayMs = 1500, timeoutMs = 45000, label = 'gemini' } = {}) {
   let lastError;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      return await fn();
+      const start = Date.now();
+      const res = await withTimeout(fn(), timeoutMs, label);
+      console.log(`[gemini] ${label} completed in ${Date.now() - start}ms`);
+      return res;
     } catch (err) {
       lastError = err;
       const msg = String(err?.message || err);
@@ -66,13 +77,13 @@ async function withRetry(fn, { retries = 3, baseDelayMs = 2000 } = {}) {
       const isRetryable =
         status === 429 ||
         (typeof status === 'number' && status >= 500) ||
-        /429|rate limit|timeout|ECONNRESET|503|502|500/i.test(msg);
+        /429|rate limit|timeout|timed out|ECONNRESET|503|502|500/i.test(msg);
 
       if (!isRetryable || attempt === retries) {
         throw err;
       }
       const waitMs = baseDelayMs * Math.pow(2, attempt);
-      console.warn(`[gemini] Retry ${attempt + 1}/${retries} after ${waitMs}ms: ${msg}`);
+      console.warn(`[gemini] Retry ${attempt + 1}/${retries} for ${label} after ${waitMs}ms: ${msg}`);
       await new Promise((r) => setTimeout(r, waitMs));
     }
   }
@@ -80,7 +91,7 @@ async function withRetry(fn, { retries = 3, baseDelayMs = 2000 } = {}) {
 }
 
 /**
- * Pass 1: Grounded fact-checking using Google Search + URL Context (anti-hallucination).
+ * Pass 1: Grounded fact-checking using Google Search (fast fallback to catalog summary).
  */
 export async function researchToolsFactCheck({ topicTitle, toolsCatalog, usdToTwd, locale = 'zh-TW' }) {
   const ai = getClient();
@@ -90,14 +101,14 @@ export async function researchToolsFactCheck({ topicTitle, toolsCatalog, usdToTw
 
   const prompt =
     locale === 'en-US'
-      ? `Use Google Search and URL Context to verify the latest 2026 official pricing, free tier limits, and key features for:
+      ? `Use Google Search to verify the latest 2026 official pricing, free tier limits, and key features for:
 Topic: ${topicTitle}
 
 Tools to verify:
 ${toolSummary}
 
 Return a concise bulleted fact brief in English covering verified plan names, exact monthly/annual USD pricing, key strengths, and real limitations.`
-      : `請針對以下主題與工具，使用 Google Search 與 URL Context 查證 2026 年最新官方資訊與定價：
+      : `請針對以下主題與工具，使用 Google Search 查證 2026 年最新官方資訊與定價：
 主題：${topicTitle}
 目前匯率參考：1 USD = ${usdToTwd} TWD
 
@@ -107,33 +118,26 @@ ${toolSummary}
 請精簡條列輸出事實摘要（繁體中文），包含最新官方方案名稱、是否有免費版、付費方案費用與台幣約略換算、核心亮點與實際限制。`;
 
   try {
-    const interaction = await withRetry(() =>
-      ai.interactions.create({
-        model: GEMINI_MODEL_MAIN,
-        input: prompt,
-        tools: [{ type: 'google_search' }, { type: 'url_context' }],
-        store: false,
-      })
+    const interaction = await withRetry(
+      () =>
+        ai.interactions.create(
+          {
+            model: GEMINI_MODEL_MAIN,
+            input: prompt,
+            tools: [{ type: 'google_search' }],
+            generation_config: { thinking_level: 'low', max_output_tokens: 1536 },
+            store: false,
+          },
+          { timeout: 20000 }
+        ),
+      { retries: 0, timeoutMs: 22000, label: 'pass1-search' }
     );
     return extractTextFromInteraction(interaction);
   } catch (err) {
-    console.warn(`[gemini] Pass 1 (google_search + url_context) failed, retrying with google_search only: ${err.message}`);
-    try {
-      const interaction = await withRetry(() =>
-        ai.interactions.create({
-          model: GEMINI_MODEL_MAIN,
-          input: prompt,
-          tools: [{ type: 'google_search' }],
-          store: false,
-        })
-      );
-      return extractTextFromInteraction(interaction);
-    } catch (err2) {
-      console.warn(`[gemini] Pass 1 fallback to catalog summary: ${err2.message}`);
-      return toolsCatalog
-        .map((t) => `- ${t.name}: $${t.startingPriceUsd}/mo (${t.hasFreePlan ? 'Free plan available' : 'Paid'}), ${t.tagline}. Pros: ${(t.pros || []).join('; ')}`)
-        .join('\n');
-    }
+    console.warn(`[gemini] Pass 1 fallback to catalog summary: ${err.message}`);
+    return toolsCatalog
+      .map((t) => `- ${t.name}: $${t.startingPriceUsd}/mo (${t.hasFreePlan ? 'Free plan available' : 'Paid'}), ${t.tagline}. Pros: ${(t.pros || []).join('; ')}`)
+      .join('\n');
   }
 }
 
@@ -200,19 +204,34 @@ Strict rules:
       ? `Refresh and update this existing guide using the verified 2026 fact brief:\nTitle: ${topic.title}\nKeyword: ${topic.targetKeyword}\nFact Brief:\n${factBrief}\n\nPrevious Draft:\n${existingBody.slice(0, 2500)}`
       : `Write a comprehensive new ${topic.type} guide:\nTitle: ${topic.title}\nCategory: ${topic.category}\nTarget Keyword: ${topic.targetKeyword}\n\nVerified Fact Brief:\n${factBrief}`;
 
-  const interaction = await withRetry(() =>
-    ai.interactions.create({
-      model: GEMINI_MODEL_MAIN,
-      system_instruction: systemInstruction,
-      input: userPrompt,
-      response_format: {
-        type: 'text',
-        mime_type: 'application/json',
-        schema,
-      },
-      store: false,
-    })
-  );
+  const callArticleModel = (modelName, timeoutMs) =>
+    withRetry(
+      () =>
+        ai.interactions.create(
+          {
+            model: modelName,
+            system_instruction: systemInstruction,
+            input: userPrompt,
+            generation_config: { thinking_level: 'low', max_output_tokens: 6144 },
+            response_format: {
+              type: 'text',
+              mime_type: 'application/json',
+              schema,
+            },
+            store: false,
+          },
+          { timeout: timeoutMs }
+        ),
+      { retries: 1, timeoutMs: timeoutMs + 5000, label: `pass2-${modelName}` }
+    );
+
+  let interaction;
+  try {
+    interaction = await callArticleModel(GEMINI_MODEL_MAIN, 55000);
+  } catch (err) {
+    console.warn(`[gemini] Primary model (${GEMINI_MODEL_MAIN}) failed, falling back to ${GEMINI_MODEL_FAST}: ${err.message}`);
+    interaction = await callArticleModel(GEMINI_MODEL_FAST, 45000);
+  }
 
   const rawText = extractTextFromInteraction(interaction);
   return extractJsonObject(rawText);
@@ -254,17 +273,23 @@ Do NOT repeat these existing slugs: ${existingSlugs.join(', ')}`
 近期趨勢參考：\n${trendText || '(無)'}
 不可重複既有 slug：${existingSlugs.join(', ')}`;
 
-  const interaction = await withRetry(() =>
-    ai.interactions.create({
-      model: GEMINI_MODEL_FAST,
-      input: prompt,
-      response_format: {
-        type: 'text',
-        mime_type: 'application/json',
-        schema,
-      },
-      store: false,
-    })
+  const interaction = await withRetry(
+    () =>
+      ai.interactions.create(
+        {
+          model: GEMINI_MODEL_FAST,
+          input: prompt,
+          generation_config: { thinking_level: 'low', max_output_tokens: 2048 },
+          response_format: {
+            type: 'text',
+            mime_type: 'application/json',
+            schema,
+          },
+          store: false,
+        },
+        { timeout: 30000 }
+      ),
+    { retries: 1, timeoutMs: 35000, label: 'topics-fast' }
   );
 
   const rawText = extractTextFromInteraction(interaction);
