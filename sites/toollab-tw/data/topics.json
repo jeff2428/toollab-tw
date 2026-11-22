@@ -5,7 +5,14 @@
     "title": "2026 台灣上班族與創作者必備 AI 工具推薦排行榜：實測 8 款高 CP 值生產力軟體",
     "type": "roundup",
     "category": "AI 生產力與筆記",
-    "tools": ["notion", "make", "perplexity", "canva", "elevenlabs", "cursor"],
+    "tools": [
+      "notion",
+      "make",
+      "perplexity",
+      "canva",
+      "elevenlabs",
+      "cursor"
+    ],
     "targetKeyword": "2026 AI 工具推薦 台灣",
     "priority": 100,
     "status": "published"
@@ -16,7 +23,10 @@
     "title": "Make.com vs Zapier 2026 深度比較：自動化工作流哪個最省錢？台幣成本實算",
     "type": "comparison",
     "category": "自動化與 AI 工作流",
-    "tools": ["make", "notion"],
+    "tools": [
+      "make",
+      "notion"
+    ],
     "targetKeyword": "Make vs Zapier 費用比較",
     "priority": 98,
     "status": "published"
@@ -27,7 +37,10 @@
     "title": "Notion AI 2026 實測評測：功能亮點、優缺點與台幣訂閱費用值不值得買？",
     "type": "review",
     "category": "AI 生產力與筆記",
-    "tools": ["notion", "perplexity"],
+    "tools": [
+      "notion",
+      "perplexity"
+    ],
     "targetKeyword": "Notion AI 評測 費用",
     "priority": 96,
     "status": "published"
@@ -38,7 +51,10 @@
     "title": "NordVPN vs Surfshark 2026 台灣實測：跨區使用 AI 工具、連線速度與性價比評比",
     "type": "comparison",
     "category": "資安隱私與跨區工具",
-    "tools": ["nordvpn", "surfshark"],
+    "tools": [
+      "nordvpn",
+      "surfshark"
+    ],
     "targetKeyword": "NordVPN vs Surfshark 台灣",
     "priority": 95,
     "status": "published"
@@ -49,10 +65,13 @@
     "title": "ElevenLabs 2026 繁體中文配音實測：AI 語音生成自然度、方案費用與短影音應用教學",
     "type": "review",
     "category": "AI 語音與影音生成",
-    "tools": ["elevenlabs", "heygen"],
+    "tools": [
+      "elevenlabs",
+      "heygen"
+    ],
     "targetKeyword": "ElevenLabs 中文配音 評測",
     "priority": 94,
-    "status": "pending"
+    "status": "published"
   },
   {
     "id": "topic-006",
@@ -60,7 +79,10 @@
     "title": "Hostinger vs Cloudways 2026 台灣架站主機比較：新手部落格與電商該選哪家？",
     "type": "comparison",
     "category": "雲端主機與架站",
-    "tools": ["hostinger", "cloudways"],
+    "tools": [
+      "hostinger",
+      "cloudways"
+    ],
     "targetKeyword": "Hostinger vs Cloudways 比較",
     "priority": 92,
     "status": "pending"
@@ -71,7 +93,10 @@
     "title": "Cursor AI 編輯器 2026 深度評測：免費版夠用嗎？Pro 方案值得工程師每月花 650 元嗎？",
     "type": "review",
     "category": "AI 開發與程式輔助",
-    "tools": ["cursor", "perplexity"],
+    "tools": [
+      "cursor",
+      "perplexity"
+    ],
     "targetKeyword": "Cursor AI 評測 價格",
     "priority": 91,
     "status": "pending"
@@ -82,7 +107,10 @@
     "title": "Canva Pro 2026 AI 功能實戰評測：魔法工作室到底省多少時間？值不值得升級付費版？",
     "type": "review",
     "category": "AI 設計與視覺創作",
-    "tools": ["canva", "heygen"],
+    "tools": [
+      "canva",
+      "heygen"
+    ],
     "targetKeyword": "Canva Pro 值得買嗎 2026",
     "priority": 90,
     "status": "pending"
@@ -93,7 +121,10 @@
     "title": "HeyGen 2026 評測與台灣實測：不露臉 AI 數位人影片製作流程、對嘴翻譯與台幣費用試算",
     "type": "review",
     "category": "AI 語音與影音生成",
-    "tools": ["heygen", "elevenlabs"],
+    "tools": [
+      "heygen",
+      "elevenlabs"
+    ],
     "targetKeyword": "HeyGen 評測 費用",
     "priority": 89,
     "status": "pending"
@@ -104,7 +135,10 @@
     "title": "Perplexity Pro 2026 實測評比：Deep Research 研究準確率與免費版差異全解析",
     "type": "review",
     "category": "AI 生產力與筆記",
-    "tools": ["perplexity", "notion"],
+    "tools": [
+      "perplexity",
+      "notion"
+    ],
     "targetKeyword": "Perplexity Pro 值得買嗎",
     "priority": 88,
     "status": "pending"
@@ -115,7 +149,10 @@
     "title": "Make.com 自動化實戰教學：零程式碼串接 AI 摘要、Notion 資料庫與每日通知工作流",
     "type": "tutorial",
     "category": "自動化與 AI 工作流",
-    "tools": ["make", "notion"],
+    "tools": [
+      "make",
+      "notion"
+    ],
     "targetKeyword": "Make.com 教學 Notion 自動化",
     "priority": 86,
     "status": "pending"
@@ -126,7 +163,10 @@
     "title": "Writesonic 2026 SEO 寫作工具評測：長文生成品質、繁中表現與小團隊成本效益分析",
     "type": "review",
     "category": "AI 寫作與 SEO 行銷",
-    "tools": ["writesonic", "perplexity"],
+    "tools": [
+      "writesonic",
+      "perplexity"
+    ],
     "targetKeyword": "Writesonic 評測 SEO AI",
     "priority": 85,
     "status": "pending"
@@ -137,7 +177,11 @@
     "title": "2026 自媒體與 YouTuber 必備 AI 影音配音工具懶人包：腳本、配音、設計一站搞定",
     "type": "roundup",
     "category": "AI 語音與影音生成",
-    "tools": ["elevenlabs", "heygen", "canva"],
+    "tools": [
+      "elevenlabs",
+      "heygen",
+      "canva"
+    ],
     "targetKeyword": "AI 影片配音工具推薦 2026",
     "priority": 84,
     "status": "pending"
@@ -148,7 +192,10 @@
     "title": "2026 台灣架設個人品牌與部落格主機推薦：Hostinger 與 Cloudways 速度、價格與優缺點總整理",
     "type": "roundup",
     "category": "雲端主機與架站",
-    "tools": ["hostinger", "cloudways"],
+    "tools": [
+      "hostinger",
+      "cloudways"
+    ],
     "targetKeyword": "台灣 WordPress 主機推薦 2026",
     "priority": 82,
     "status": "pending"
@@ -159,7 +206,12 @@
     "title": "自由工作者月花不到台幣 1,500 元的 AI 高效工具組合：筆記、設計與自動化最佳搭配",
     "type": "roundup",
     "category": "AI 生產力與筆記",
-    "tools": ["notion", "make", "canva", "perplexity"],
+    "tools": [
+      "notion",
+      "make",
+      "canva",
+      "perplexity"
+    ],
     "targetKeyword": "自由工作者 AI 工具 省錢組合",
     "priority": 80,
     "status": "pending"
@@ -170,7 +222,10 @@
     "title": "NordVPN 2026 台灣跨區實測教學：如何穩定測試海外搶先版 AI 服務與防資安外洩",
     "type": "tutorial",
     "category": "資安隱私與跨區工具",
-    "tools": ["nordvpn", "surfshark"],
+    "tools": [
+      "nordvpn",
+      "surfshark"
+    ],
     "targetKeyword": "NordVPN 跨區 AI 工具 教學",
     "priority": 78,
     "status": "pending"
@@ -181,7 +236,10 @@
     "title": "Cloudways 2026 實戰評測：按月計費彈性如何？台灣電商網站效能實測報告",
     "type": "review",
     "category": "雲端主機與架站",
-    "tools": ["cloudways", "hostinger"],
+    "tools": [
+      "cloudways",
+      "hostinger"
+    ],
     "targetKeyword": "Cloudways 評價 速度",
     "priority": 76,
     "status": "pending"
@@ -192,7 +250,10 @@
     "title": "Surfshark VPN 2026 完整評價：不限裝置共用真的划算嗎？台灣網速與退款實測",
     "type": "review",
     "category": "資安隱私與跨區工具",
-    "tools": ["surfshark", "nordvpn"],
+    "tools": [
+      "surfshark",
+      "nordvpn"
+    ],
     "targetKeyword": "Surfshark 評價 2026",
     "priority": 75,
     "status": "pending"
@@ -203,7 +264,11 @@
     "title": "2026 企業行銷部 AI SEO 內容工作流：Perplexity 查證 + Writesonic 初稿 + Notion 協作",
     "type": "tutorial",
     "category": "AI 寫作與 SEO 行銷",
-    "tools": ["perplexity", "writesonic", "notion"],
+    "tools": [
+      "perplexity",
+      "writesonic",
+      "notion"
+    ],
     "targetKeyword": "AI SEO 工作流 內容行銷",
     "priority": 74,
     "status": "pending"
@@ -214,7 +279,10 @@
     "title": "Hostinger 2026 台灣評價與實測：新手 10 分鐘架好 WordPress 站點與真實續約成本拆解",
     "type": "review",
     "category": "雲端主機與架站",
-    "tools": ["hostinger", "cloudways"],
+    "tools": [
+      "hostinger",
+      "cloudways"
+    ],
     "targetKeyword": "Hostinger 評價 續約價格",
     "priority": 72,
     "status": "pending"

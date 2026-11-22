@@ -1,18 +1,18 @@
 {
-  "lastPipelineRun": "2026-11-22T14:48:54.832+08:00",
-  "lastContentGeneratedAt": "2026-11-22T11:00:00+08:00",
-  "lastExchangeRateUpdate": "2026-11-22T14:48:42.488+08:00",
+  "lastPipelineRun": "2026-11-22T19:11:32.366+08:00",
+  "lastContentGeneratedAt": "2026-11-22T19:11:20.441+08:00",
+  "lastExchangeRateUpdate": "2026-11-22T19:03:33.470+08:00",
   "lastThreadsTokenRefresh": null,
-  "lastHealthCheckAt": "2026-11-22T14:48:54.826+08:00",
+  "lastHealthCheckAt": "2026-11-22T19:11:32.364+08:00",
   "consecutiveFailures": 0,
   "dailyCounters": {
     "date": "2026-11-22",
-    "articlesGenerated": 0,
+    "articlesGenerated": 1,
     "socialPublished": 0
   },
   "lastHealthSummary": {
     "status": "healthy",
-    "articleCount": 2,
+    "articleCount": 3,
     "activeAffiliateLinks": 0,
     "placeholderAffiliateLinks": 8
   }
