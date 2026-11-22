@@ -1,0 +1,25 @@
+{
+  "rssFeeds": [
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "category": "AI & SaaS Launches"
+    },
+    {
+      "name": "Hacker News Frontpage",
+      "url": "https://hnrss.org/frontpage?q=AI+OR+SaaS+OR+LLM",
+      "category": "Developer & AI Trends"
+    },
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "category": "AI Models"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "Open Source AI"
+    }
+  ],
+  "exchangeRateApi": "https://open.er-api.com/v6/latest/USD"
+}

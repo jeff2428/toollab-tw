@@ -1,0 +1,39 @@
+{
+  "id": "tripdeals-tw",
+  "niche": "travel-tw",
+  "calculatorPreset": "travel-tw",
+  "brandName": "旅省實驗室",
+  "brandEnglish": "TripDeals TW",
+  "tagline": "2026 日韓泰自由行票券比價・訂房攻略・eSIM 網卡實測",
+  "description": "專為台灣自由行旅客打造的海外旅遊省錢指南。實測比較 Klook、KKday、Agoda、Booking 與各國 eSIM 方案，幫你用最划算台幣預算玩遍東京、大阪、首爾與曼谷。",
+  "locale": "zh-TW",
+  "currency": "TWD",
+  "usdToTwd": 32.5,
+  "defaultSiteUrl": "https://jeff2428.github.io",
+  "defaultBasePath": "/sites/tripdeals-tw",
+  "editorialTeam": "TripDeals TW 旅遊編輯部",
+  "contactEmail": "travel@tripdeals-tw.example",
+  "refreshDays": 30,
+  "dailyArticleLimit": 1,
+  "dailySocialLimit": 2,
+  "minArticleChars": 1200,
+  "disclosureShort": "透明聲明：本站部分旅遊票券、訂房與 eSIM 連結為聯盟合作連結。透過連結下單不會增加您的費用，有時還能套用專屬優惠碼。",
+  "disclosureFull": "旅省實驗室（TripDeals TW）致力於提供台灣旅客最實用的海外自由行比價與避坑資訊。當您透過本站 /go/ 連結預訂門票、交通券、飯店或 eSIM 時，合作旅遊平台可能會支付推廣分潤給我們，您的實際結帳金額與官方完全相同。我們堅持依實際手續費、取消彈性與客服品質客觀評比。",
+  "newsletter": {
+    "title": "每週日韓泰機票票券折扣＆旅遊省錢週報",
+    "description": "自動彙整每週最新日本／韓國／泰國景點優惠、刷卡回饋攻略與 eSIM 限時折扣碼。",
+    "formActionUrl": "",
+    "telegramChannelUrl": ""
+  },
+  "analytics": {
+    "ga4MeasurementId": "",
+    "cloudflareToken": ""
+  },
+  "social": {
+    "hashtags": ["#日本自由行", "#韓國旅遊", "#eSIM推薦", "#Klook", "#KKday"],
+    "threadsEnabled": true,
+    "facebookEnabled": true,
+    "xEnabled": true,
+    "telegramEnabled": true
+  }
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "slug": "make",
+    "name": "Make.com",
+    "tagline": "Visual no-code automation platform with unbeatable per-operation pricing",
+    "category": "Automation & AI Workflows",
+    "officialUrl": "https://www.make.com/",
+    "pricingUrl": "https://www.make.com/en/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack",
+    "commissionInfo": "20%–35% recurring commission up to 24 months",
+    "startingPriceUsd": 9,
+    "hasFreePlan": true,
+    "rating": 4.9,
+    "pros": [
+      "Costs up to 70% less than Zapier at 10,000+ monthly operations",
+      "Native routers, iterators, error handlers, and HTTP/JSON modules",
+      "Built-in OpenAI, Gemini, Notion, and Slack integrations"
+    ],
+    "cons": [
+      "Visual data mapping takes 1–2 hours to master for beginners",
+      "Free tier limits you to 2 active scenarios simultaneously"
+    ],
+    "bestFor": "Solopreneurs, growth marketers, and AI workflow builders",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion AI",
+    "tagline": "All-in-one workspace combining docs, databases, and workspace-aware AI Q&A",
+    "category": "AI Productivity & Docs",
+    "officialUrl": "https://www.notion.so/",
+    "pricingUrl": "https://www.notion.so/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack",
+    "commissionInfo": "50% commission on first 12 months",
+    "startingPriceUsd": 10,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "Workspace-wide Q&A searches across internal docs with citations",
+      "Database AI autofill summarizes notes and extracts action items",
+      "Generous free plan for individual knowledge management"
+    ],
+    "cons": [
+      "Per-seat AI add-on gets expensive for larger teams",
+      "Complex relational databases have a learning curve"
+    ],
+    "bestFor": "Remote teams, product managers, and solo creators",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "tagline": "Studio-grade AI voice synthesis, voice cloning, and multilingual video dubbing",
+    "category": "AI Audio & Video",
+    "officialUrl": "https://elevenlabs.io/",
+    "pricingUrl": "https://elevenlabs.io/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack / FirstPromoter",
+    "commissionInfo": "22% recurring commission for 12 months",
+    "startingPriceUsd": 5,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "Industry-leading vocal realism, pacing, and emotional range",
+      "One-click AI Dubbing translates videos while preserving original voice",
+      "Low $5/mo Starter entry tier for short-form creators"
+    ],
+    "cons": [
+      "Professional voice cloning requires Creator tier or higher",
+      "Fast-paced scripts occasionally need punctuation tweaks"
+    ],
+    "bestFor": "YouTubers, podcasters, course creators, and localization teams",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "heygen",
+    "name": "HeyGen",
+    "tagline": "Photorealistic AI avatar video generator with lip-sync translation",
+    "category": "AI Audio & Video",
+    "officialUrl": "https://www.heygen.com/",
+    "pricingUrl": "https://www.heygen.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "FirstPromoter / Rewardful",
+    "commissionInfo": "20% recurring commission for 12 months",
+    "startingPriceUsd": 29,
+    "hasFreePlan": true,
+    "rating": 4.7,
+    "pros": [
+      "Produces studio-quality presenter videos from text scripts",
+      "Accurate lip-sync translation across 40+ languages",
+      "Eliminates camera, lighting, and reshoot overhead"
+    ],
+    "cons": [
+      "Higher monthly entry price compared to audio-only tools",
+      "Complex hand gestures still look slightly synthetic"
+    ],
+    "bestFor": "B2B product marketing, SaaS onboarding, and faceless channels",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "tagline": "Real-time SEO article writer with competitor SERP analysis and fact-checking",
+    "category": "AI Writing & SEO",
+    "officialUrl": "https://writesonic.com/",
+    "pricingUrl": "https://writesonic.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "FirstPromoter / PartnerStack",
+    "commissionInfo": "30% lifetime recurring commission",
+    "startingPriceUsd": 16,
+    "hasFreePlan": true,
+    "rating": 4.5,
+    "pros": [
+      "Pulls live SERP data to structure competitive long-form posts",
+      "Built-in factual citations reduce outdated claims",
+      "Direct WordPress publishing and internal linking helpers"
+    ],
+    "cons": [
+      "Credit tiers can feel confusing at first glance",
+      "Brand voice still benefits from light human editing"
+    ],
+    "bestFor": "SEO agencies, content marketers, and niche publishers",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Fast LiteSpeed web hosting with built-in AI site builder and free domain",
+    "category": "Cloud Hosting & Web",
+    "officialUrl": "https://www.hostinger.com/",
+    "pricingUrl": "https://www.hostinger.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact",
+    "commissionInfo": "40%–60% CPA per qualified hosting sale",
+    "startingPriceUsd": 2.99,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "LiteSpeed Enterprise caching delivers fast Core Web Vitals",
+      "Includes free first-year domain and automated SSL",
+      "Clean hPanel dashboard ideal for non-technical founders"
+    ],
+    "cons": [
+      "Lowest monthly rate requires a 48-month commitment",
+      "High-traffic WooCommerce stores should upgrade to Cloud tiers"
+    ],
+    "bestFor": "Affiliate bloggers, SMB websites, and WordPress beginners",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "cloudways",
+    "name": "Cloudways",
+    "tagline": "Managed cloud hosting on AWS, Google Cloud, and DigitalOcean without DevOps",
+    "category": "Cloud Hosting & Web",
+    "officialUrl": "https://www.cloudways.com/",
+    "pricingUrl": "https://www.cloudways.com/en/pricing.php",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Official Partner / Impact",
+    "commissionInfo": "Up to $125 CPA or 7% lifetime hybrid",
+    "startingPriceUsd": 14,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "Pay-as-you-go monthly billing with zero long-term lock-in",
+      "Built-in Redis, Varnish, and Cloudflare Enterprise add-on",
+      "Instant vertical scaling for traffic spikes"
+    ],
+    "cons": [
+      "No free tier or bundled email hosting",
+      "Server panel assumes basic familiarity with DNS and caching"
+    ],
+    "bestFor": "Agencies, WooCommerce stores, and high-traffic publishers",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "tagline": "High-speed WireGuard VPN with Threat Protection Pro for remote teams",
+    "category": "Security & Privacy",
+    "officialUrl": "https://nordvpn.com/",
+    "pricingUrl": "https://nordvpn.com/pricing/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / CJ",
+    "commissionInfo": "40%–100% new signup + 30% renewal share",
+    "startingPriceUsd": 3.39,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "NordLynx protocol maintains near-native broadband speeds",
+      "Covers 10 devices with audited no-logs security",
+      "Threat Protection Pro blocks trackers and malicious downloads"
+    ],
+    "cons": [
+      "Month-to-month plan is pricey compared to 2-year bundles",
+      "No permanent free tier (30-day money-back guarantee only)"
+    ],
+    "bestFor": "Remote workers, digital nomads, and security-conscious teams",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "surfshark",
+    "name": "Surfshark",
+    "tagline": "Budget-friendly VPN with unlimited simultaneous device connections",
+    "category": "Security & Privacy",
+    "officialUrl": "https://surfshark.com/",
+    "pricingUrl": "https://surfshark.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / Tune",
+    "commissionInfo": "40%+ CPA on new subscriptions",
+    "startingPriceUsd": 2.19,
+    "hasFreePlan": false,
+    "rating": 4.6,
+    "pros": [
+      "Unlimited devices per account for families or small teams",
+      "One of the lowest 2-year effective monthly prices",
+      "CleanWeb ad blocker and Alternative ID included"
+    ],
+    "cons": [
+      "Occasional peak-hour slowdowns on distant servers",
+      "Renewal pricing jumps after the initial promo term"
+    ],
+    "bestFor": "Budget-minded founders, students, and multi-device households",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "canva",
+    "name": "Canva Pro",
+    "tagline": "Fastest AI-powered visual design suite for social, decks, and marketing assets",
+    "category": "AI Design & Creative",
+    "officialUrl": "https://www.canva.com/",
+    "pricingUrl": "https://www.canva.com/pricing/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact",
+    "commissionInfo": "Up to 80% first-period / fixed bounty per Pro signup",
+    "startingPriceUsd": 15,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "Magic Studio handles background removal, resize, and mockups in seconds",
+      "Massive library of templates, fonts, and brand kits",
+      "Zero design background required to ship clean social carousels"
+    ],
+    "cons": [
+      "Not a full replacement for Illustrator on complex vector work",
+      "Best stock photos and Magic tools are gated behind Pro"
+    ],
+    "bestFor": "Social media managers, solo founders, and content creators",
+    "lastVerifiedAt": "2026-11-22"
+  }
+]

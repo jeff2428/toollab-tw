@@ -1,0 +1,39 @@
+{
+  "id": "saasradar-en",
+  "niche": "ai-saas",
+  "calculatorPreset": "ai-saas",
+  "brandName": "SaaSRadar",
+  "brandEnglish": "SaaSRadar",
+  "tagline": "Independent AI & SaaS Stack Reviews, Cost Benchmarks & Automation Workflows",
+  "description": "Data-driven software reviews, head-to-head pricing comparisons, and lean AI automation stacks for founders, creators, and remote teams worldwide.",
+  "locale": "en-US",
+  "currency": "USD",
+  "usdToTwd": 32.5,
+  "defaultSiteUrl": "https://jeff2428.github.io",
+  "defaultBasePath": "/sites/saasradar-en",
+  "editorialTeam": "SaaSRadar Editorial",
+  "contactEmail": "editorial@saasradar.example",
+  "refreshDays": 30,
+  "dailyArticleLimit": 1,
+  "dailySocialLimit": 2,
+  "minArticleChars": 3000,
+  "disclosureShort": "Editorial Disclosure: Some links on this page are affiliate links. If you subscribe through them, we may earn a commission at no extra cost to you.",
+  "disclosureFull": "SaaSRadar publishes independent, research-backed software comparisons and pricing benchmarks. To keep our interactive calculators and reviews free, we participate in affiliate programs with selected SaaS vendors. When you click our /go/ links and purchase a paid plan, we may receive a referral commission at zero additional cost to you. Our ratings and drawbacks are never influenced by sponsorships.",
+  "newsletter": {
+    "title": "Weekly SaaS Deal & AI Stack Dispatch",
+    "description": "Get our weekly curated breakdown of new AI tools, verified pricing changes, and lean automation templates.",
+    "formActionUrl": "",
+    "telegramChannelUrl": ""
+  },
+  "analytics": {
+    "ga4MeasurementId": "",
+    "cloudflareToken": ""
+  },
+  "social": {
+    "hashtags": ["#AI", "#SaaS", "#Automation", "#Productivity"],
+    "threadsEnabled": true,
+    "facebookEnabled": true,
+    "xEnabled": true,
+    "telegramEnabled": true
+  }
+}

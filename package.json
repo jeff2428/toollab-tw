@@ -1,0 +1,29 @@
+{
+  "name": "affiliate-matrix-autopilot",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "多站矩陣全自動聯盟行銷引擎（繁中 AI/SaaS + 英文全球 SaaS + 台灣日韓泰旅遊）",
+  "scripts": {
+    "build": "node scripts/render-og.mjs && node scripts/render-carousel.mjs && node scripts/newsletter-dispatch.mjs && node scripts/build-site.mjs",
+    "qa": "node scripts/quality-gate.mjs",
+    "qa:urls": "node scripts/quality-gate.mjs --check-urls",
+    "discover": "node scripts/discover-topics.mjs",
+    "generate": "node scripts/generate-content.mjs",
+    "og": "node scripts/render-og.mjs",
+    "carousel": "node scripts/render-carousel.mjs",
+    "newsletter": "node scripts/newsletter-dispatch.mjs",
+    "social": "node scripts/social-publish.mjs",
+    "health": "node scripts/health-monitor.mjs",
+    "ping": "node scripts/ping-search-engines.mjs",
+    "pipeline": "node scripts/run-pipeline.mjs --all-sites",
+    "dry-run": "node scripts/run-pipeline.mjs --all-sites --dry-run",
+    "preview": "node scripts/preview-server.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0"
+  }
+}

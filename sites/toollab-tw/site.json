@@ -1,0 +1,39 @@
+{
+  "id": "toollab-tw",
+  "niche": "ai-saas",
+  "calculatorPreset": "ai-saas",
+  "brandName": "AI 工具實驗室",
+  "brandEnglish": "ToolLab TW",
+  "tagline": "繁體中文 AI 工具與 SaaS 雲端服務實測評比・客觀數據・台幣費用試算",
+  "description": "專為台灣上班族、自由工作者、創作者與工程團隊打造的 AI 工具與 SaaS 深度評測媒體。每日自動追蹤最新定價與實戰工作流，幫你避開踩雷、選對最高 CP 值生產力工具。",
+  "locale": "zh-TW",
+  "currency": "TWD",
+  "usdToTwd": 32.5,
+  "defaultSiteUrl": "https://jeff2428.github.io",
+  "defaultBasePath": "",
+  "editorialTeam": "ToolLab TW 編輯部",
+  "contactEmail": "editor@toollab-tw.example",
+  "refreshDays": 30,
+  "dailyArticleLimit": 1,
+  "dailySocialLimit": 2,
+  "minArticleChars": 1200,
+  "disclosureShort": "編輯透明聲明：本文包含合作夥伴聯盟推廣連結。若您透過連結訂閱付費方案，我們可能會獲得官方分潤，但這不會增加您的任何費用，亦不影響我們的客觀實測評分。",
+  "disclosureFull": "AI 工具實驗室（ToolLab TW）致力於提供客觀、可驗證的繁體中文 AI 與 SaaS 軟體評測。為維持網站全自動維運與免費閱讀，部分工具推薦連結為聯盟行銷（Affiliate）合作連結；當您透過本站 /go/ 轉址連結完成註冊或訂閱時，廠商可能會依比例支付推廣分潤給我們，您的購買價格與官方完全一致（部分合作專案甚至提供額外試用天數或首月折扣）。所有評測標準均以官方實際規格、台幣換算成本與台灣使用者情境為準，不接受廠商付費修改負評。",
+  "newsletter": {
+    "title": "每週 AI 省錢情報與新工具實測週報",
+    "description": "每週日自動整理最新 AI 工具限時優惠、免費替代方案與實測教學，不錯過任何高 CP 值工具。",
+    "formActionUrl": "",
+    "telegramChannelUrl": ""
+  },
+  "analytics": {
+    "ga4MeasurementId": "",
+    "cloudflareToken": ""
+  },
+  "social": {
+    "hashtags": ["#AI工具", "#生產力工具", "#SaaS推薦", "#ToolLabTW"],
+    "threadsEnabled": true,
+    "facebookEnabled": true,
+    "xEnabled": true,
+    "telegramEnabled": true
+  }
+}

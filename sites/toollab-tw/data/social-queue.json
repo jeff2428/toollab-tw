@@ -1,0 +1,38 @@
+[
+  {
+    "id": "soc-seed-001",
+    "articleSlug": "2026-ai-tools-taiwan-guide",
+    "platform": "threads",
+    "text": "2026 年 AI 工具這麼多，到底哪些真的每天用得到、又不會月費燒破產？\n\n我們實測了 8 款台灣上班族與創作者最常用的 AI／SaaS 工具，幫大家整理出完整台幣費用表與免費替代方案（Notion AI、Make.com、Perplexity、Cursor 一次看懂）。\n\n完整評比與避坑建議：",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/2026-ai-tools-taiwan-guide/?utm_source=threads&utm_medium=social&utm_campaign=2026-ai-tools-taiwan-guide",
+    "status": "pending",
+    "createdAt": "2026-11-22T09:00:00+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "Seed social post"
+  },
+  {
+    "id": "soc-seed-002",
+    "articleSlug": "make-vs-zapier-2026",
+    "platform": "facebook",
+    "text": "自動化工作流工具該選 Make.com 還是 Zapier？\n\n很多台灣小團隊一開始直接用 Zapier，結果操作次數一多月費直接飆破台幣好幾千。我們實測比較兩者在 2026 年的免費額度、萬次操作台幣成本與 LINE／Notion 串接彈性，幫你算出一年能省下多少軟體預算！",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/make-vs-zapier-2026/?utm_source=facebook&utm_medium=social&utm_campaign=make-vs-zapier-2026",
+    "status": "pending",
+    "createdAt": "2026-11-22T09:00:00+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "Seed social post"
+  },
+  {
+    "id": "soc-seed-003",
+    "articleSlug": "notion-ai-review-2026",
+    "platform": "x",
+    "text": "Notion AI 在 2026 年到底還值不值得單獨加購？\n\n我們整理了台幣實算、與獨立聊天機器人的差異，以及哪些工作流最適合直接內建在 Notion 裡跑摘要與專案問答👇",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/notion-ai-review-2026/?utm_source=x&utm_medium=social&utm_campaign=notion-ai-review-2026",
+    "status": "pending",
+    "createdAt": "2026-11-22T09:00:00+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "Seed social post"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "notion",
+    "name": "Notion AI",
+    "tagline": "整合知識庫、專案管理與 AI 寫作摘要的全能團隊工作區",
+    "category": "AI 生產力與筆記",
+    "officialUrl": "https://www.notion.so/",
+    "pricingUrl": "https://www.notion.so/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack",
+    "commissionInfo": "首次訂閱 50% 分潤（最高 12 個月持續分潤）",
+    "startingPriceUsd": 10,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "繁體中文介面完整，資料庫與自動化邏輯彈性極高",
+      "Notion AI 可直接針對現有筆記進行問答、摘要與翻譯",
+      "個人免費版已足夠應付日常知識管理"
+    ],
+    "cons": [
+      "進階資料庫與權限設定對新手有一定學習曲線",
+      "AI 加購方案需依席次計費，多人團隊成本較高"
+    ],
+    "bestFor": "自由工作者、新創團隊、需要集中管理文件與專案的人",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "make",
+    "name": "Make.com",
+    "tagline": "視覺化跨平台自動化工作流引擎，CP 值極高的 Zapier 替代方案",
+    "category": "自動化與 AI 工作流",
+    "officialUrl": "https://www.make.com/",
+    "pricingUrl": "https://www.make.com/en/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack",
+    "commissionInfo": "20%–35% 訂閱制持續分潤（長達 12–24 個月）",
+    "startingPriceUsd": 9,
+    "hasFreePlan": true,
+    "rating": 4.9,
+    "pros": [
+      "費用遠低於 Zapier，萬次操作只需台幣約 300 多元",
+      "支援複雜分支、迴圈、JSON 解析與即時 HTTP Webhook",
+      "內建 OpenAI、Gemini、Notion、LINE、Google Sheets 節點"
+    ],
+    "cons": [
+      "視覺化節點與資料映射需要基本邏輯概念",
+      "免費版僅提供 2 個同時啟用的 Scenario"
+    ],
+    "bestFor": "行銷自動化人員、電商賣家、AI 工作流開發者",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "tagline": "全球最自然的 AI 語音合成、跨語系配音與聲音複製平台",
+    "category": "AI 語音與影音生成",
+    "officialUrl": "https://elevenlabs.io/",
+    "pricingUrl": "https://elevenlabs.io/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "PartnerStack / FirstPromoter",
+    "commissionInfo": "22% 訂閱制持續分潤（最長 12 個月）",
+    "startingPriceUsd": 5,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "支援台灣繁體中文語調合成，情緒與停頓極度自然",
+      "支援影片一鍵多國語言配音（AI Dubbing）",
+      "Starter 方案門檻低，適合短影音創作者快速上手"
+    ],
+    "cons": [
+      "中文多音字偶爾仍需手動調整拼音或標點符號",
+      "高畫質聲音複製需訂閱 Creator 以上方案"
+    ],
+    "bestFor": "YouTuber、Reels／TikTok 短影音創作者、線上課程講師",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "tagline": "高速穩定的跨區 VPN，解鎖海外限定 AI 工具與企業級資安防護",
+    "category": "資安隱私與跨區工具",
+    "officialUrl": "https://nordvpn.com/",
+    "pricingUrl": "https://nordvpn.com/pricing/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / CJ / 聯盟網",
+    "commissionInfo": "首購 40%–100% 高額分潤 + 續約 30% 分潤",
+    "startingPriceUsd": 3.39,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "NordLynx 協定速度極快，台灣連美日節點延遲低",
+      "支援同時 10 台裝置，可穩定跨區測試美版 AI 功能",
+      "內建威脅防護可阻擋惡意廣告與釣魚網域"
+    ],
+    "cons": [
+      "單月訂閱價格較貴，需買 1–2 年方案才划算",
+      "無永久免費版（僅提供 30 天退款保證）"
+    ],
+    "bestFor": "需要跨區使用海外 AI 服務、常在咖啡廳工作的遠距工作者",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "surfshark",
+    "name": "Surfshark",
+    "tagline": "不限裝置數量的高 CP 值 VPN，適合多人家庭與小團隊分攤",
+    "category": "資安隱私與跨區工具",
+    "officialUrl": "https://surfshark.com/",
+    "pricingUrl": "https://surfshark.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / Tune / 聯盟網",
+    "commissionInfo": "40% 以上 CPA 分潤（轉換率極高）",
+    "startingPriceUsd": 2.19,
+    "hasFreePlan": false,
+    "rating": 4.6,
+    "pros": [
+      "不限裝置連線數，電腦、手機、平板與同事可共用",
+      "兩年方案平均每月不到台幣 80 元，門檻極低",
+      "繁體中文 App 介面簡潔直覺"
+    ],
+    "cons": [
+      "部分冷門國家節點尖峰時段速度略遜於 NordVPN",
+      "續約原價較首購優惠高，需留意自動續訂"
+    ],
+    "bestFor": "預算有限的學生、小資族、多裝置與小團隊共用",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "台灣個人站長與聯盟行銷新手首選的高速平價雲端主機",
+    "category": "雲端主機與架站",
+    "officialUrl": "https://www.hostinger.com/",
+    "pricingUrl": "https://www.hostinger.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / 官方聯盟計畫",
+    "commissionInfo": "最高 40%–60% 單筆高轉換分潤",
+    "startingPriceUsd": 2.99,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "配備 LiteSpeed 伺服器與亞洲（新加坡）機房，台灣連線快速",
+      "內建 AI 架站精靈與一鍵 WordPress 部署",
+      "贈送首年免費網域與自動 SSL 憑證"
+    ],
+    "cons": [
+      "僅有 48 個月長約能拿到最低月費",
+      "高流量電商站建議直上 Cloud 方案"
+    ],
+    "bestFor": "部落客、中小企業官網、WordPress 聯盟行銷站長",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "canva",
+    "name": "Canva Pro",
+    "tagline": "台灣市占率最高的 AI 線上平面設計與社群圖卡製作神器",
+    "category": "AI 設計與視覺創作",
+    "officialUrl": "https://www.canva.com/",
+    "pricingUrl": "https://www.canva.com/pricing/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact",
+    "commissionInfo": "每筆 Pro 訂閱最高 80% 首期／固定獎金分潤",
+    "startingPriceUsd": 15,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "內建 Magic Studio：一鍵去背、AI 改圖、自動排版縮放",
+      "龐大繁體中文字型與台灣節慶行銷模板庫",
+      "非設計師也能 5 分鐘產出 IG／Threads／簡報視覺"
+    ],
+    "cons": [
+      "進階向量編修與印刷色彩管理無法取代 Illustrator",
+      "部分熱門素材僅限 Pro 會員使用"
+    ],
+    "bestFor": "社群小編、電商賣家、自媒體創作者、行銷企劃",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "tagline": "原生整合頂尖 AI 模型的程式開發編輯器，工程師效率倍增首選",
+    "category": "AI 開發與程式輔助",
+    "officialUrl": "https://www.cursor.com/",
+    "pricingUrl": "https://www.cursor.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "官方推薦 / Partner 計畫追蹤中",
+    "commissionInfo": "官方推廣計畫／推薦點數獎勵",
+    "startingPriceUsd": 20,
+    "hasFreePlan": true,
+    "rating": 4.9,
+    "pros": [
+      "全面理解整個 Repo 脈絡，支援跨檔案自動編輯與測試修復",
+      "無縫支援 VS Code 外掛與快速鍵遷移",
+      "Tab 自動補全精準度大幅超越傳統補全工具"
+    ],
+    "cons": [
+      "重度使用高階模型快速額度消耗較快",
+      "大型專案初次建立索引需耗費較多記憶體"
+    ],
+    "bestFor": "前後端工程師、獨立開發者、Vibe Coding 實作團隊",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "tagline": "主打 SEO 長文與即時聯網事實查核的 AI 行銷寫作平台",
+    "category": "AI 寫作與 SEO 行銷",
+    "officialUrl": "https://writesonic.com/",
+    "pricingUrl": "https://writesonic.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "FirstPromoter / PartnerStack",
+    "commissionInfo": "30% 終身訂閱制持續分潤（高含金量）",
+    "startingPriceUsd": 16,
+    "hasFreePlan": true,
+    "rating": 4.5,
+    "pros": [
+      "專為 Google SEO 結構化文章設計，自動分析競品關鍵字",
+      "內建即時搜尋查證，減少過時資訊錯誤",
+      "支援一鍵輸出 WordPress 與多國語言改寫"
+    ],
+    "cons": [
+      "繁體中文語氣仍需微調才會更貼近台灣在地用語",
+      "方案層級較多，選購前需對照字數與點數限制"
+    ],
+    "bestFor": "SEO 內容行銷團隊、跨境電商文案、成長駭客",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "heygen",
+    "name": "HeyGen",
+    "tagline": "擬真 AI 數位人影片生成與對嘴翻譯，不露臉也能日更影片",
+    "category": "AI 語音與影音生成",
+    "officialUrl": "https://www.heygen.com/",
+    "pricingUrl": "https://www.heygen.com/pricing",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "FirstPromoter / Rewardful",
+    "commissionInfo": "20% 訂閱制持續分潤（長達 12 個月）",
+    "startingPriceUsd": 29,
+    "hasFreePlan": true,
+    "rating": 4.7,
+    "pros": [
+      "只需輸入文字即可生成嘴型自然同步的數位人簡報影片",
+      "支援將中文影片一鍵翻譯為英文、日文並保留原聲與對嘴",
+      "大幅省下攝影棚、燈光與反覆重錄的人力成本"
+    ],
+    "cons": [
+      "付費門檻相對較高，月費約台幣 950 元起",
+      "複雜肢體動作仍不如真人實拍自然"
+    ],
+    "bestFor": "B2B 行銷人員、知識型自媒體、跨境產品介紹團隊",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "cloudways",
+    "name": "Cloudways",
+    "tagline": "免維運全託管雲端主機，一鍵管理 AWS／GCP／DigitalOcean 效能",
+    "category": "雲端主機與架站",
+    "officialUrl": "https://www.cloudways.com/",
+    "pricingUrl": "https://www.cloudways.com/en/pricing.php",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "官方高分潤計畫 / Impact",
+    "commissionInfo": "最高每筆 $125 美元一次性分潤，或 7% 終身混合分潤",
+    "startingPriceUsd": 14,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "不綁長約按月計費，高流量電商與 WooCommerce 極度穩定",
+      "內建自動備份、Redis 快取與 Cloudflare Enterprise 加購",
+      "可選東京、新加坡資料中心，台灣訪問速度極佳"
+    ],
+    "cons": [
+      "沒有免費方案，且不提供傳統電子郵件信箱託管",
+      "對完全不懂網站基礎概念的新手介面資訊密度較高"
+    ],
+    "bestFor": "WordPress 接案公司、高流量電商、注重穩定度的企業網站",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "perplexity",
+    "name": "Perplexity Pro",
+    "tagline": "附帶即時來源引用的 AI 搜尋引擎，研究報告與市場調查效率翻倍",
+    "category": "AI 生產力與筆記",
+    "officialUrl": "https://www.perplexity.ai/",
+    "pricingUrl": "https://www.perplexity.ai/pro",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Dub / 官方推薦計畫",
+    "commissionInfo": "官方推薦獎勵／合作計畫",
+    "startingPriceUsd": 20,
+    "hasFreePlan": true,
+    "rating": 4.8,
+    "pros": [
+      "每個論點皆附帶真實網頁來源連結，大幅降低 AI 幻覺",
+      "Pro 版可自由切換頂尖推理模型並上傳 PDF／試算表分析",
+      "支援 Deep Research 模式數分鐘產出完整產業調研"
+    ],
+    "cons": [
+      "不擅長長篇小說或高度創意性的文學寫作",
+      "Pro 月費約台幣 650 元，輕度用戶免費版已足夠"
+    ],
+    "bestFor": "研究員、投資分析師、行銷企劃、學生與寫作查證需求者",
+    "lastVerifiedAt": "2026-11-22"
+  }
+]

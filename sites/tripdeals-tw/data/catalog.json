@@ -1,0 +1,210 @@
+[
+  {
+    "slug": "klook",
+    "name": "Klook 客路",
+    "tagline": "日韓泰熱門樂園門票、機場快線與一日遊一站預訂，APP 即買即用",
+    "category": "旅遊票券與行程",
+    "officialUrl": "https://www.klook.com/zh-TW/",
+    "pricingUrl": "https://www.klook.com/zh-TW/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Klook Partner / 聯盟網 / Impact",
+    "commissionInfo": "2%–5% 訂單成交分潤（高轉換率、APP 下單門檻低）",
+    "startingPriceUsd": 5,
+    "hasFreePlan": false,
+    "rating": 4.8,
+    "pros": [
+      "支援台灣 LINE Pay、街口與多家信用卡，免海外 1.5% 手續費方案多",
+      "東京迪士尼、環球影城、JR Pass 與新幹線憑證電子化極成熟",
+      "常態提供滿額折扣碼與 Klook 酷幣折抵"
+    ],
+    "cons": [
+      "熱門樂園快速通關與特定時段票券仍可能瞬間完售",
+      "部分第三方一日遊品質需留意最新旅客評價"
+    ],
+    "bestFor": "日本／韓國／泰國自由行旅客、需要即時 QR Code 入場的族群",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "kkday",
+    "name": "KKday",
+    "tagline": "台灣本土最大旅遊體驗平台，中文客服親切、日韓包車與門票選擇多",
+    "category": "旅遊票券與行程",
+    "officialUrl": "https://www.kkday.com/zh-tw",
+    "pricingUrl": "https://www.kkday.com/zh-tw",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "KKday Alliance / 聯盟網",
+    "commissionInfo": "2%–6% 訂單分潤（台灣節慶檔期轉換極高）",
+    "startingPriceUsd": 5,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "台灣本地客服支援度佳，發生班機延誤或改期時溝通容易",
+      "日韓包車、機場接送與台灣高鐵國旅聯票優惠豐富",
+      "常與台灣銀行信用卡合作推出限量 85–9 折優惠"
+    ],
+    "cons": [
+      "部分商品確認時間非即時，下單前需看清楚憑證發放規則",
+      "同款門票偶爾價格與 Klook 有些微價差，建議結帳前雙邊比價"
+    ],
+    "bestFor": "家庭親子包車出遊、重視繁體中文真人客服的台灣旅客",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "agoda",
+    "name": "Agoda",
+    "tagline": "亞洲日韓泰飯店房源最齊全，常態隱藏版特價與延後付款彈性高",
+    "category": "海外訂房比價",
+    "officialUrl": "https://www.agoda.com/zh-tw/",
+    "pricingUrl": "https://www.agoda.com/zh-tw/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Agoda Partners / 聯盟網",
+    "commissionInfo": "4%–7% 住宿完成分潤（高客單價）",
+    "startingPriceUsd": 35,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "東京、大阪、首爾、曼谷飯店密度最高，常有驚喜限時折扣",
+      "多數房型支援「先訂後付」與指定日期前免費取消",
+      "搭配台灣信用卡專屬活動頁常可再折 6%–10%"
+    ],
+    "cons": [
+      "顯示房價初期可能未含當地稅金與服務費，須看最終結帳頁",
+      "延後扣款若選台幣計價可能有匯差，建議選當地幣別搭配高回饋卡"
+    ],
+    "bestFor": "日韓泰自由行、喜歡比價撿便宜飯店的小資與家庭旅客",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "booking",
+    "name": "Booking.com",
+    "tagline": "全球覆蓋率最廣的訂房平台，Genius 會員常享免費早餐與升等",
+    "category": "海外訂房比價",
+    "officialUrl": "https://www.booking.com/index.zh-tw.html",
+    "pricingUrl": "https://www.booking.com/index.zh-tw.html",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Awin / CJ / 聯盟網",
+    "commissionInfo": "4% 住宿成交分潤",
+    "startingPriceUsd": 40,
+    "hasFreePlan": false,
+    "rating": 4.6,
+    "pros": [
+      "價格透明，搜尋結果直接顯示含稅總價居多",
+      "歐美、日本商務飯店與特色民宿選擇極多",
+      "Genius 等級累積容易，常有 10%–15% 會員折抵"
+    ],
+    "cons": [
+      "部分亞洲廉價旅館促銷價不一定比 Agoda 低",
+      "下單後需留意飯店「現場付款」或「平台預先扣款」條件"
+    ],
+    "bestFor": "歐美長途旅行、重視含稅總價透明度與 Genius 常客福利者",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "airalo",
+    "name": "Airalo eSIM",
+    "tagline": "覆蓋全球 200+ 國家的純數位 eSIM，出發前掃 QR Code 落地即上網",
+    "category": "海外上網 eSIM",
+    "officialUrl": "https://www.airalo.com/zh-TW",
+    "pricingUrl": "https://www.airalo.com/zh-TW",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / PartnerStack",
+    "commissionInfo": "10%–20% 銷售分潤（高複購率）",
+    "startingPriceUsd": 4.5,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "免換實體 SIM 卡、不怕弄丟台灣原本門號卡",
+      "APP 可即時查看剩餘流量並隨時加購儲值",
+      "跨多國旅遊可選亞洲區域型方案一次搞定"
+    ],
+    "cons": [
+      "多數方案為純上網流量，不含傳統語音通話門號",
+      "台灣購買價格偶爾略高於本土特價吃到飽網卡"
+    ],
+    "bestFor": "多國商務出差、說走就走臨時需要海外上網的旅客",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "djb-esim",
+    "name": "DJB 暢日卡 / eSIM",
+    "tagline": "專為台灣旅客優化的日韓原生線路 eSIM，主打不降速與台灣即時客服",
+    "category": "海外上網 eSIM",
+    "officialUrl": "https://esim.djbcard.com/",
+    "pricingUrl": "https://esim.djbcard.com/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "聯盟網 Affiliates.One / 官方分潤",
+    "commissionInfo": "8%–15% 分潤（台灣日韓旅客口碑極佳）",
+    "startingPriceUsd": 5,
+    "hasFreePlan": false,
+    "rating": 4.8,
+    "pros": [
+      "採用日本／韓國原生網路路線，低延遲且刷地圖與訂票順暢",
+      "提供繁體中文 LINE 即時技術客服，落地設定卡關有人救",
+      "天數彈性（3–30 天皆可客製），支援真正吃到飽方案"
+    ],
+    "cons": [
+      "購買前務必自行確認手機型號有支援 eSIM（部分中階安卓機不支援）",
+      "真正無限不降速版本單價高於限量流量方案"
+    ],
+    "bestFor": "日本／韓國重度上網、導航打卡與不希望被降速的台灣旅客",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "tripcom",
+    "name": "Trip.com",
+    "tagline": "一站式機票、飯店與高鐵火車票預訂，中文介面與搶票提醒實用",
+    "category": "機票與綜合訂房",
+    "officialUrl": "https://tw.trip.com/",
+    "pricingUrl": "https://tw.trip.com/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Trip.com Affiliate / 聯盟網",
+    "commissionInfo": "1%–5% 機票／飯店／火車票分潤",
+    "startingPriceUsd": 30,
+    "hasFreePlan": false,
+    "rating": 4.6,
+    "pros": [
+      "機票比價與廉航組合顯示清楚，常有週三或節慶機票閃促",
+      "支援日本 JR、韓國 KTX 與歐洲火車票預訂",
+      "繁體中文 24 小時線上客服回應速度快"
+    ],
+    "cons": [
+      "機票退改規則依艙等差異大，下單前務必詳閱航空公司規定",
+      "部分特價房型不可退改，適合行程已確定者"
+    ],
+    "bestFor": "想一次比價機票＋飯店＋跨城鐵路票的自由行規劃者",
+    "lastVerifiedAt": "2026-11-22"
+  },
+  {
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "tagline": "出國住飯店與連機場 Wi-Fi 必備加密 VPN，保護網銀與台灣串流跨區",
+    "category": "旅途資安與跨區",
+    "officialUrl": "https://nordvpn.com/",
+    "pricingUrl": "https://nordvpn.com/pricing/",
+    "affiliateUrl": "",
+    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "Impact / CJ / 聯盟網",
+    "commissionInfo": "40%–100% 首購高額分潤",
+    "startingPriceUsd": 3.39,
+    "hasFreePlan": false,
+    "rating": 4.7,
+    "pros": [
+      "在國外飯店連公共 Wi-Fi 刷網銀或訂票時防止帳號遭竊",
+      "可穩定連回台灣 IP 收看本地影音或登入限制海外 IP 的服務",
+      "支援 10 台裝置，出國全家人手機筆電一起保護"
+    ],
+    "cons": [
+      "不提供永久免費版，建議買長年期方案最划算",
+      "在極少數網路管制極嚴格地區需切換混淆伺服器"
+    ],
+    "bestFor": "經常出國旅遊／出差、重視公共 Wi-Fi 交易安全的旅客",
+    "lastVerifiedAt": "2026-11-22"
+  }
+]

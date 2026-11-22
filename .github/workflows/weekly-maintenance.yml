@@ -1,0 +1,82 @@
+name: Weekly Matrix Maintenance & Newsletter
+
+on:
+  schedule:
+    # 每週日台灣時間 10:00 (UTC 02:00)
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run full matrix URL health check, token refresh & newsletter dispatch
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          node scripts/quality-gate.mjs --check-urls
+          node scripts/social-publish.mjs --refresh-tokens || true
+          node scripts/newsletter-dispatch.mjs --send || true
+          node scripts/health-monitor.mjs --weekly-digest
+
+      - name: Commit updated reports
+        run: |
+          git config user.name "ToolLab-Autopilot[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sites/ reports/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(maintenance): weekly matrix health & newsletter [skip ci]"
+            git push
+          fi
+
+      - name: Open alert issue if needed
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('reports/alert-issue.md')) return;
+            const body = fs.readFileSync('reports/alert-issue.md', 'utf8');
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'needs-attention',
+            });
+            if (issues.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues[0].number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '[Weekly Maintenance] 矩陣連結或 Token 需要介入處理',
+                body,
+                labels: ['needs-attention'],
+              });
+            }
