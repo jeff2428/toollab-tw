@@ -1,8 +1,8 @@
 {
   "siteId": "toollab-tw",
-  "checkedAt": "2026-11-22T19:11:21.654+08:00",
+  "checkedAt": "2026-11-25T17:52:12.662+08:00",
   "passed": true,
-  "articleCount": 5,
+  "articleCount": 6,
   "catalogCount": 12,
   "errors": [],
   "warnings": [],
@@ -77,7 +77,7 @@
       "slug": "perplexity",
       "url": "https://www.perplexity.ai/",
       "ok": true,
-      "status": 200
+      "status": 403
     }
   ]
 }

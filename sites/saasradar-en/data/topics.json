@@ -5,7 +5,10 @@
     "title": "Make.com vs Zapier in 2026: Real Cost Breakdown at 10,000+ Operations",
     "type": "comparison",
     "category": "Automation & AI Workflows",
-    "tools": ["make", "notion"],
+    "tools": [
+      "make",
+      "notion"
+    ],
     "targetKeyword": "Make vs Zapier pricing 2026",
     "priority": 100,
     "status": "published"
@@ -16,7 +19,12 @@
     "title": "Best Lean AI & SaaS Stack for Solopreneurs in 2026 (Under $60/Month)",
     "type": "roundup",
     "category": "AI Productivity & Docs",
-    "tools": ["make", "notion", "canva", "elevenlabs"],
+    "tools": [
+      "make",
+      "notion",
+      "canva",
+      "elevenlabs"
+    ],
     "targetKeyword": "best AI stack for solopreneurs 2026",
     "priority": 98,
     "status": "published"
@@ -27,10 +35,13 @@
     "title": "ElevenLabs vs HeyGen 2026: Which AI Video & Voice Tool Wins for Faceless Channels?",
     "type": "comparison",
     "category": "AI Audio & Video",
-    "tools": ["elevenlabs", "heygen"],
+    "tools": [
+      "elevenlabs",
+      "heygen"
+    ],
     "targetKeyword": "ElevenLabs vs HeyGen 2026",
     "priority": 95,
-    "status": "pending"
+    "status": "published"
   },
   {
     "id": "en-topic-004",
@@ -38,7 +49,10 @@
     "title": "Hostinger vs Cloudways 2026: Which Hosting Scales Better for Content Sites?",
     "type": "comparison",
     "category": "Cloud Hosting & Web",
-    "tools": ["hostinger", "cloudways"],
+    "tools": [
+      "hostinger",
+      "cloudways"
+    ],
     "targetKeyword": "Hostinger vs Cloudways 2026",
     "priority": 93,
     "status": "pending"
@@ -49,7 +63,10 @@
     "title": "Notion AI Review 2026: Is the Per-Seat Add-On Still Worth Paying For?",
     "type": "review",
     "category": "AI Productivity & Docs",
-    "tools": ["notion", "make"],
+    "tools": [
+      "notion",
+      "make"
+    ],
     "targetKeyword": "Notion AI review 2026",
     "priority": 91,
     "status": "pending"
@@ -60,7 +77,10 @@
     "title": "NordVPN vs Surfshark 2026: Speed, Unlimited Devices & Security Tested",
     "type": "comparison",
     "category": "Security & Privacy",
-    "tools": ["nordvpn", "surfshark"],
+    "tools": [
+      "nordvpn",
+      "surfshark"
+    ],
     "targetKeyword": "NordVPN vs Surfshark 2026",
     "priority": 90,
     "status": "pending"
@@ -71,7 +91,10 @@
     "title": "Writesonic Review 2026: Real-Time SERP Writing Quality & ROI Analysis",
     "type": "review",
     "category": "AI Writing & SEO",
-    "tools": ["writesonic", "notion"],
+    "tools": [
+      "writesonic",
+      "notion"
+    ],
     "targetKeyword": "Writesonic review 2026",
     "priority": 88,
     "status": "pending"
@@ -82,7 +105,10 @@
     "title": "Canva Pro Magic Studio 2026: Can It Replace Dedicated Design Tools for Startups?",
     "type": "review",
     "category": "AI Design & Creative",
-    "tools": ["canva", "heygen"],
+    "tools": [
+      "canva",
+      "heygen"
+    ],
     "targetKeyword": "Canva Pro review 2026",
     "priority": 86,
     "status": "pending"
@@ -93,7 +119,10 @@
     "title": "How to Build an Automated Content & Lead Pipeline with Make.com and Notion",
     "type": "tutorial",
     "category": "Automation & AI Workflows",
-    "tools": ["make", "notion"],
+    "tools": [
+      "make",
+      "notion"
+    ],
     "targetKeyword": "Make Notion automation tutorial",
     "priority": 84,
     "status": "pending"
@@ -104,7 +133,10 @@
     "title": "Cloudways Review 2026: Pay-As-You-Go Managed Cloud Benchmarks & Pricing",
     "type": "review",
     "category": "Cloud Hosting & Web",
-    "tools": ["cloudways", "hostinger"],
+    "tools": [
+      "cloudways",
+      "hostinger"
+    ],
     "targetKeyword": "Cloudways review 2026",
     "priority": 82,
     "status": "pending"
@@ -115,7 +147,10 @@
     "title": "ElevenLabs Pricing & Quality Review 2026: Starter vs Creator Tier Breakdown",
     "type": "review",
     "category": "AI Audio & Video",
-    "tools": ["elevenlabs", "canva"],
+    "tools": [
+      "elevenlabs",
+      "canva"
+    ],
     "targetKeyword": "ElevenLabs pricing review 2026",
     "priority": 80,
     "status": "pending"
@@ -126,7 +161,10 @@
     "title": "HeyGen Review 2026: Lip-Sync Video Translation & Presenter Quality Tested",
     "type": "review",
     "category": "AI Audio & Video",
-    "tools": ["heygen", "elevenlabs"],
+    "tools": [
+      "heygen",
+      "elevenlabs"
+    ],
     "targetKeyword": "HeyGen review 2026",
     "priority": 78,
     "status": "pending"

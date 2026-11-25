@@ -8,7 +8,7 @@
   "description": "專為台灣自由行旅客打造的海外旅遊省錢指南。實測比較 Klook、KKday、Agoda、Booking 與各國 eSIM 方案，幫你用最划算台幣預算玩遍東京、大阪、首爾與曼谷。",
   "locale": "zh-TW",
   "currency": "TWD",
-  "usdToTwd": 32.98,
+  "usdToTwd": 32.92,
   "defaultSiteUrl": "https://jeff2428.github.io",
   "defaultBasePath": "/sites/tripdeals-tw",
   "editorialTeam": "TripDeals TW 旅遊編輯部",
