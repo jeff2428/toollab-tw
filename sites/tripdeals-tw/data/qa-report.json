@@ -1,8 +1,8 @@
 {
   "siteId": "tripdeals-tw",
-  "checkedAt": "2026-11-25T17:52:16.604+08:00",
+  "checkedAt": "2026-11-26T17:27:23.457+08:00",
   "passed": true,
-  "articleCount": 4,
+  "articleCount": 5,
   "catalogCount": 8,
   "errors": [],
   "warnings": [],
@@ -29,7 +29,7 @@
       "slug": "booking",
       "url": "https://www.booking.com/index.zh-tw.html",
       "ok": true,
-      "status": 202
+      "status": 200
     },
     {
       "slug": "airalo",

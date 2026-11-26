@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-25T17:52:16.604+08:00",
+  "checkedAt": "2026-11-26T17:27:23.457+08:00",
   "passed": true,
-  "totalArticles": 13,
+  "totalArticles": 16,
   "totalTools": 30,
   "sites": [
     {
       "siteId": "toollab-tw",
-      "checkedAt": "2026-11-25T17:52:12.662+08:00",
+      "checkedAt": "2026-11-26T17:27:17.242+08:00",
       "passed": true,
-      "articleCount": 6,
+      "articleCount": 7,
       "catalogCount": 12,
       "errors": [],
       "warnings": [],
@@ -83,15 +83,15 @@
           "slug": "perplexity",
           "url": "https://www.perplexity.ai/",
           "ok": true,
-          "status": 403
+          "status": 200
         }
       ]
     },
     {
       "siteId": "saasradar-en",
-      "checkedAt": "2026-11-25T17:52:13.370+08:00",
+      "checkedAt": "2026-11-26T17:27:18.496+08:00",
       "passed": true,
-      "articleCount": 3,
+      "articleCount": 4,
       "catalogCount": 10,
       "errors": [],
       "warnings": [],
@@ -160,9 +160,9 @@
     },
     {
       "siteId": "tripdeals-tw",
-      "checkedAt": "2026-11-25T17:52:16.604+08:00",
+      "checkedAt": "2026-11-26T17:27:23.457+08:00",
       "passed": true,
-      "articleCount": 4,
+      "articleCount": 5,
       "catalogCount": 8,
       "errors": [],
       "warnings": [],
@@ -189,7 +189,7 @@
           "slug": "booking",
           "url": "https://www.booking.com/index.zh-tw.html",
           "ok": true,
-          "status": 202
+          "status": 200
         },
         {
           "slug": "airalo",

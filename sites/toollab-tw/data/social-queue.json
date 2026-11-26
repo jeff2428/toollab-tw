@@ -130,5 +130,53 @@
     "publishedAt": null,
     "externalId": null,
     "note": "skipped (unconfigured)"
+  },
+  {
+    "id": "toollab-tw-soc-1795684943413-1",
+    "articleSlug": "cursor-ai-coding-review-2026",
+    "platform": "threads",
+    "text": "2026 年還在用傳統 VS Code 寫扣嗎？這篇深度評測帶你看 Cursor AI 編輯器到底值不值得每個月花 650 元訂閱！內含免費版與 Pro 方案的殘酷對比，台灣工程師必看。",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/cursor-ai-coding-review-2026/?utm_source=threads&utm_medium=social&utm_campaign=cursor-ai-coding-review-2026",
+    "status": "pending",
+    "createdAt": "2026-11-26T17:22:23.413+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "skipped (unconfigured)"
+  },
+  {
+    "id": "toollab-tw-soc-1795684943413-2",
+    "articleSlug": "cursor-ai-coding-review-2026",
+    "platform": "facebook",
+    "text": "【AI 工具實驗室 2026 最新評測】Cursor AI 編輯器到底強在哪？免費版夠用嗎？Pro 方案每個月大約 650 台幣到底值不值得花下去？我們為大家做了全方位的實測與優缺點分析，還同步推薦了工程師查資料必備的工具，趕快點進來看看吧！",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/cursor-ai-coding-review-2026/?utm_source=facebook&utm_medium=social&utm_campaign=cursor-ai-coding-review-2026",
+    "status": "pending",
+    "createdAt": "2026-11-26T17:22:23.413+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "skipped (unconfigured)"
+  },
+  {
+    "id": "toollab-tw-soc-1795684943413-3",
+    "articleSlug": "cursor-ai-coding-review-2026",
+    "platform": "x",
+    "text": "Cursor AI 編輯器 2026 深度評測：免費版夠用嗎？Pro 方案值不值得工程師每月花 650 元？完整優缺點與台灣開發情境分析。",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/cursor-ai-coding-review-2026/?utm_source=x&utm_medium=social&utm_campaign=cursor-ai-coding-review-2026",
+    "status": "pending",
+    "createdAt": "2026-11-26T17:22:23.413+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "skipped (unconfigured)"
+  },
+  {
+    "id": "toollab-tw-soc-1795684943413-4",
+    "articleSlug": "cursor-ai-coding-review-2026",
+    "platform": "telegram",
+    "text": "🔥 2026 Cursor AI 編輯器深度評測\n\n- 免費版 vs Pro 方案完整比較\n- 實測數據與優缺點分析\n- 台灣工程師使用情境建議\n\n點擊閱讀完整文章了解詳情！",
+    "url": "https://jeff2428.github.io/toollab-tw/articles/cursor-ai-coding-review-2026/?utm_source=telegram&utm_medium=social&utm_campaign=cursor-ai-coding-review-2026",
+    "status": "pending",
+    "createdAt": "2026-11-26T17:22:23.413+08:00",
+    "publishedAt": null,
+    "externalId": null,
+    "note": "skipped (unconfigured)"
   }
 ]
