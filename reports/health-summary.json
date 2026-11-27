@@ -1,35 +1,35 @@
 {
-  "checkedAt": "2026-11-26T17:27:28.860+08:00",
+  "checkedAt": "2026-11-27T17:40:15.761+08:00",
   "status": "healthy",
-  "totalArticles": 16,
-  "totalPendingTopics": 28,
+  "totalArticles": 19,
+  "totalPendingTopics": 29,
   "sites": [
     {
       "siteId": "toollab-tw",
-      "checkedAt": "2026-11-26T17:27:28.860+08:00",
+      "checkedAt": "2026-11-27T17:40:15.759+08:00",
       "status": "healthy",
-      "articleCount": 7,
-      "pendingTopics": 13,
+      "articleCount": 8,
+      "pendingTopics": 12,
       "activeAffiliateLinks": 0,
       "placeholderAffiliateLinks": 12,
       "issues": []
     },
     {
       "siteId": "saasradar-en",
-      "checkedAt": "2026-11-26T17:27:28.860+08:00",
+      "checkedAt": "2026-11-27T17:40:15.760+08:00",
       "status": "healthy",
-      "articleCount": 4,
-      "pendingTopics": 8,
+      "articleCount": 5,
+      "pendingTopics": 7,
       "activeAffiliateLinks": 0,
       "placeholderAffiliateLinks": 10,
       "issues": []
     },
     {
       "siteId": "tripdeals-tw",
-      "checkedAt": "2026-11-26T17:27:28.860+08:00",
+      "checkedAt": "2026-11-27T17:40:15.761+08:00",
       "status": "healthy",
-      "articleCount": 5,
-      "pendingTopics": 7,
+      "articleCount": 6,
+      "pendingTopics": 10,
       "activeAffiliateLinks": 0,
       "placeholderAffiliateLinks": 8,
       "issues": []

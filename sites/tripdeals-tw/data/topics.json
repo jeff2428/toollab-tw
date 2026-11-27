@@ -85,7 +85,7 @@
     ],
     "targetKeyword": "大阪環球影城 快速通關 Klook KKday",
     "priority": 90,
-    "status": "pending"
+    "status": "published"
   },
   {
     "id": "trip-topic-007",
@@ -171,6 +171,62 @@
     ],
     "targetKeyword": "大阪京都 5天4夜 預算 2026",
     "priority": 78,
+    "status": "pending"
+  },
+  {
+    "id": "tripdeals-tw-topic-013",
+    "slug": "kyoto-accommodation-agoda-booking-comparison-2026",
+    "title": "2026京都住宿推薦：Agoda 與 Booking.com 訂房價格、取消政策全攻略",
+    "type": "comparison",
+    "category": "住宿推薦",
+    "tools": [
+      "agoda",
+      "booking"
+    ],
+    "targetKeyword": "京都住宿推薦",
+    "priority": 1,
+    "status": "pending"
+  },
+  {
+    "id": "tripdeals-tw-topic-014",
+    "slug": "klook-kkday-taiwan-high-speed-rail-discount-2026",
+    "title": "高鐵國旅聯票怎麼買最省？Klook 與 KKday 優惠碼全解析",
+    "type": "tutorial",
+    "category": "交通優惠",
+    "tools": [
+      "klook",
+      "kkday"
+    ],
+    "targetKeyword": "高鐵國旅聯票優惠",
+    "priority": 2,
+    "status": "pending"
+  },
+  {
+    "id": "tripdeals-tw-topic-015",
+    "slug": "djb-esim-airalo-japan-comparison-2026",
+    "title": "日本上網選哪家？DJB 暢日卡與 Airalo eSIM 訊號、網速實際評測",
+    "type": "comparison",
+    "category": "海外上網",
+    "tools": [
+      "djb-esim",
+      "airalo"
+    ],
+    "targetKeyword": "日本網卡推薦",
+    "priority": 3,
+    "status": "pending"
+  },
+  {
+    "id": "tripdeals-tw-topic-016",
+    "slug": "nordvpn-travel-booking-security-guide-2026",
+    "title": "出國機票飯店訂更便宜？善用 NordVPN 跨區比價與公共 Wi-Fi 資安防護指南",
+    "type": "tutorial",
+    "category": "旅遊資安",
+    "tools": [
+      "nordvpn",
+      "tripcom"
+    ],
+    "targetKeyword": "VPN 機票比價",
+    "priority": 4,
     "status": "pending"
   }
 ]

@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-11-26T17:27:23.457+08:00",
+  "checkedAt": "2026-11-27T17:40:05.967+08:00",
   "passed": true,
-  "totalArticles": 16,
+  "totalArticles": 19,
   "totalTools": 30,
   "sites": [
     {
       "siteId": "toollab-tw",
-      "checkedAt": "2026-11-26T17:27:17.242+08:00",
+      "checkedAt": "2026-11-27T17:39:59.811+08:00",
       "passed": true,
-      "articleCount": 7,
+      "articleCount": 8,
       "catalogCount": 12,
       "errors": [],
       "warnings": [],
@@ -89,9 +89,9 @@
     },
     {
       "siteId": "saasradar-en",
-      "checkedAt": "2026-11-26T17:27:18.496+08:00",
+      "checkedAt": "2026-11-27T17:40:00.644+08:00",
       "passed": true,
-      "articleCount": 4,
+      "articleCount": 5,
       "catalogCount": 10,
       "errors": [],
       "warnings": [],
@@ -160,9 +160,9 @@
     },
     {
       "siteId": "tripdeals-tw",
-      "checkedAt": "2026-11-26T17:27:23.457+08:00",
+      "checkedAt": "2026-11-27T17:40:05.967+08:00",
       "passed": true,
-      "articleCount": 5,
+      "articleCount": 6,
       "catalogCount": 8,
       "errors": [],
       "warnings": [],
