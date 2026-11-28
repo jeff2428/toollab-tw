@@ -83,7 +83,7 @@
     ],
     "targetKeyword": "NordVPN vs Surfshark 2026",
     "priority": 90,
-    "status": "pending"
+    "status": "published"
   },
   {
     "id": "en-topic-007",
@@ -167,6 +167,62 @@
     ],
     "targetKeyword": "HeyGen review 2026",
     "priority": 78,
+    "status": "pending"
+  },
+  {
+    "id": "saasradar-en-topic-013",
+    "slug": "writesonic-vs-heygen-content-creation-2026",
+    "title": "Writesonic vs HeyGen: Which AI Tool Dominates Video and Text Creation in 2026?",
+    "type": "comparison",
+    "category": "AI Content Creation",
+    "tools": [
+      "writesonic",
+      "heygen"
+    ],
+    "targetKeyword": "writesonic vs heygen",
+    "priority": 1,
+    "status": "pending"
+  },
+  {
+    "id": "saasradar-en-topic-014",
+    "slug": "notion-ai-make-automation-workflow-tutorial",
+    "title": "How to Build an Automated Content Engine Using Notion AI and Make",
+    "type": "tutorial",
+    "category": "AI Productivity",
+    "tools": [
+      "notion",
+      "make"
+    ],
+    "targetKeyword": "notion ai make automation",
+    "priority": 2,
+    "status": "pending"
+  },
+  {
+    "id": "saasradar-en-topic-015",
+    "slug": "nordvpn-surfshark-security-stack-ai-founders",
+    "title": "NordVPN vs Surfshark: The Ultimate Privacy Stack for AI Startups and Solopreneurs",
+    "type": "comparison",
+    "category": "Security & Privacy",
+    "tools": [
+      "nordvpn",
+      "surfshark"
+    ],
+    "targetKeyword": "nordvpn vs surfshark for startups",
+    "priority": 3,
+    "status": "pending"
+  },
+  {
+    "id": "saasradar-en-topic-016",
+    "slug": "hostinger-cloudways-saas-landing-page-hosting",
+    "title": "Hostinger vs Cloudways: Best Hosting Platform for Your AI SaaS Landing Page",
+    "type": "comparison",
+    "category": "Cloud Hosting",
+    "tools": [
+      "hostinger",
+      "cloudways"
+    ],
+    "targetKeyword": "hostinger vs cloudways saas hosting",
+    "priority": 4,
     "status": "pending"
   }
 ]
